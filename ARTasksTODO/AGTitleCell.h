@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AGTitleCell : UITableViewCell
+#import "AGBaseCell.h"
+
+@interface AGTitleCell : AGBaseCell
+
 @property(strong, readonly, nonatomic) UITextField *txtField;
+
 @end

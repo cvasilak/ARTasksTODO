@@ -103,13 +103,13 @@ enum AGDueProjTagRows {
     
     switch (section) {
         case AGTableSectionTitle: {
-            AGTitleCell *titleCell = [[AGTitleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+            AGTitleCell *titleCell = [AGTitleCell cellForTableView:tableView];
             titleCell.txtField.text = self.task[@"title"];
             cell = titleCell;
             break;
         }
         default: {
-            AGTitleCell *titleCell = [[AGTitleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+            AGTitleCell *titleCell = [AGTitleCell cellForTableView:tableView];
             titleCell.txtField.text = self.task[@"description"];
             cell = titleCell;
             break;

@@ -22,6 +22,7 @@
 		486BDE911753B480000F3B07 /* AGTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BDE901753B480000F3B07 /* AGTaskViewController.m */; };
 		486BDE941753FA23000F3B07 /* AGTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BDE931753FA23000F3B07 /* AGTitleCell.m */; };
 		4E064F067F8B48D68EFA3A3F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF644C7C316341C0950BECD6 /* libPods.a */; };
+		6FF917181754B40C00545E8B /* AGBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF917171754B40C00545E8B /* AGBaseCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		486BDE901753B480000F3B07 /* AGTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTaskViewController.m; sourceTree = "<group>"; };
 		486BDE921753FA23000F3B07 /* AGTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTitleCell.h; sourceTree = "<group>"; };
 		486BDE931753FA23000F3B07 /* AGTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTitleCell.m; sourceTree = "<group>"; };
+		6FF917161754B40C00545E8B /* AGBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGBaseCell.h; sourceTree = "<group>"; };
+		6FF917171754B40C00545E8B /* AGBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGBaseCell.m; sourceTree = "<group>"; };
 		F269A6E1008240ABA8550F74 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		FF644C7C316341C0950BECD6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -158,6 +161,8 @@
 			children = (
 				486BDE921753FA23000F3B07 /* AGTitleCell.h */,
 				486BDE931753FA23000F3B07 /* AGTitleCell.m */,
+				6FF917161754B40C00545E8B /* AGBaseCell.h */,
+				6FF917171754B40C00545E8B /* AGBaseCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				486BDE891753978D000F3B07 /* AGTask.m in Sources */,
 				486BDE911753B480000F3B07 /* AGTaskViewController.m in Sources */,
 				486BDE941753FA23000F3B07 /* AGTitleCell.m in Sources */,
+				6FF917181754B40C00545E8B /* AGBaseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
