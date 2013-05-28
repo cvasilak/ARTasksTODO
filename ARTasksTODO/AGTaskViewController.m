@@ -99,19 +99,22 @@ enum AGDueProjTagRows {
     NSUInteger section = [indexPath section];
     //NSUInteger row = [indexPath row];
     
-    UITableViewCell *cell;
+    static NSString *AGTitleCellIdentifier = @"AGTitleCellIdentifier";
+    
+    AGTitleCell *cell = [tableView dequeueReusableCellWithIdentifier:AGTitleCellIdentifier];
+    
+    if (cell == nil) {
+        cell = [[AGTitleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:AGTitleCellIdentifier];
+    }
     
     switch (section) {
         case AGTableSectionTitle: {
-            AGTitleCell *titleCell = [[AGTitleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-            titleCell.txtField.text = self.task[@"title"];
-            cell = titleCell;
+            cell.txtField.text = self.task[@"title"];
             break;
         }
+            
         default: {
-            AGTitleCell *titleCell = [[AGTitleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-            titleCell.txtField.text = self.task[@"description"];
-            cell = titleCell;
+            cell.txtField.text = self.task[@"description"];
             break;
         }
     }
